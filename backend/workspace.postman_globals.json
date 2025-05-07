@@ -1,0 +1,15 @@
+{
+	"id": "ef4c1900-46c7-4c35-8119-1dba99b78587",
+	"values": [
+		{
+			"key": "API_PREFIX",
+			"value": "http://localhost:3000/api",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2025-03-11T04:34:19.238Z",
+	"_postman_exported_using": "Postman/11.35.0"
+}

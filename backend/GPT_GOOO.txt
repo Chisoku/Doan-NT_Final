@@ -1,0 +1,147 @@
+Bây giờ nhớ, dự án của tôi là react native, backend dùng node js, test API bằng Postman
+Hiện tại đang code backend, có các folder cơ bản rổi : config, controllers, dtos, middlewares, migrations, models, node_modules, seeders, .babelrc, .env, AppRoute.js, index.jjs, ...
+db như sau : 
+Table users {
+  id int [pk]
+  email varchar
+  password varchar
+  name varchar
+  role int
+  avatar varchar
+  phone int
+  address varchar
+  created_at datetime
+  updated_at datetime
+}
+
+Table categories {
+  id int [pk]
+  name varchar
+  image text
+}
+
+Table products {
+  id int [pk]
+  name varchar
+  image text
+  price int 
+  description text
+  //specification text
+  buyturn int // so lan mua cua san pham 
+  category_id int 
+}
+Ref: "categories"."id" < "products"."category_id"
+
+Table feedbacks {
+  id int [pk]
+  product_id int
+  user_id int
+  star int
+  content text
+  created_at datetime
+  updated_at datetime
+}
+Ref: "products"."id" < "feedbacks"."product_id"
+Ref: "users"."id" < "feedbacks"."user_id"
+
+Table orders {
+  id int [pk]
+  user_id int
+  status varchar
+  content text
+  payment_type varchar
+  total_price int
+  created_at datetime
+  updated_at datetime
+  shipping_address varchar
+}
+Ref: "users"."id" < "orders"."user_id"
+
+Table cart_items {
+  id int [pk]
+  user_id int
+  product_id int
+  quantity int
+}
+Ref: "users"."id" < "cart_items"."user_id"
+Ref: "products"."id" < "cart_items"."product_id"
+
+Table order_items {
+  id int [pk]
+  order_id int
+  product_id int
+  quantity int
+  price int
+  note varchar
+}
+Ref: "orders"."id" < "order_items"."order_id"
+Ref: "products"."id" < "order_items"."product_id"
+
+Table notifications {
+  id int [pk]
+  user_id int
+  msg varchar
+  is_read int
+  created_at datetime
+  type varchar
+}
+Ref: "users"."id" < "notifications"."user_id"
+
+api hiện tại gồm : 
+1. Users (Người dùng & Xác thực)
+Xác thực
+POST /api/users/register → Đăng ký
+POST /api/users/login → Đăng nhập
+POST /api/users/logout → Đăng xuất
+POST /api/users/refresh-token → Cấp lại token mới
+------------------------------------------------------
+Quản lý người dùng
+GET /api/users → Lấy danh sách user
+GET /api/users/:id → Lấy thông tin user
+PUT /api/users/:id → Cập nhật thông tin user
+PUT /api/users/:id/password → Đổi mật khẩu
+DELETE /api/users/:id → Xóa user
+
+3. Categories (Danh mục sản phẩm)
+   - GET /api/categories - Lấy danh sách danh mục
+   - POST /api/categories - Thêm danh mục mới
+   - PUT /api/categories/:id - Cập nhật danh mục
+   - DELETE /api/categories/:id - Xóa danh mục
+
+4. Products (Sản phẩm)
+   - GET /api/products - Lấy danh sách sản phẩm
+   - GET /api/products/:id - Lấy chi tiết sản phẩm
+   - POST /api/products - Thêm sản phẩm mới
+   - PUT /api/products/:id - Cập nhật sản phẩm
+   - DELETE /api/products/:id - Xóa sản phẩm
+
+5. Cart (Giỏ hàng)
+   - POST /api/cart - Thêm sản phẩm vào giỏ
+   - GET /api/cart - Lấy giỏ hàng của user
+   - PUT /api/cart/:id - Cập nhật số lượng sản phẩm
+   - DELETE /api/cart/:id - Xóa sản phẩm khỏi giỏ
+
+6. Orders (Đơn hàng)
+   - POST /api/orders - Tạo đơn hàng
+   - GET /api/orders - Lấy danh sách đơn hàng
+   - GET /api/orders/:id - Lấy chi tiết đơn hàng
+   - PUT /api/orders/:id - Cập nhật trạng thái đơn hàng
+   - DELETE /api/orders/:id - Hủy đơn hàng
+
+7. Order Items (Chi tiết đơn hàng)
+   - GET /api/order-items/:orderId - Lấy danh sách sản phẩm trong đơn hàng
+
+8. Feedbacks (Đánh giá sản phẩm)
+   - POST /api/feedbacks - Người dùng đánh giá sản phẩm
+   - GET /api/feedbacks/:product_id - Lấy đánh giá của sản phẩm
+
+9. Notifications (Thông báo)
+   - GET /api/notifications - Lấy danh sách thông báo của user
+   - PUT /api/notifications/:id - Đánh dấu thông báo đã đọc
+   - DELETE /api/notifications/:id - Xóa thông báo
+
+
+tôi vừa làm xong get, insert user , h bạn làm tiếp cho tôi : 
+PUT /api/users/:id → Cập nhật thông tin user
+PUT /api/users/:id/password → Đổi mật khẩu
+Làm cập nhật thông tin user trước đi 

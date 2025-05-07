@@ -1,0 +1,798 @@
+{
+	"info": {
+		"_postman_id": "09b23a95-29ba-42f6-9dfb-0497c39a8bfc",
+		"name": "ShopAppOnlineNodejsReactNative",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42790198"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "api/products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/products",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/products/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/products/3",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/products",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/products/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/products/3",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/products/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/products/3",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "api/categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/categories",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/categories/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/categories/2",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"categories",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/categories",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/categories/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/categories/2",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"categories",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/categories/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/categories/2",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"categories",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "api/orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/orders",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orders/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/orders/5",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"orders",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orders/user/:userId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/orders/user/123",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"orders",
+								"user",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				
+				{
+					"name": "api/orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/orders",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orders/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/orders/5",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"orders",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orders/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/orders/5",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"orders",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "api/users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/users",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/users/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/users/10",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"users",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"testuser@example.com\",\n  \"password\": \"P@ssw0rd123\",\n  \"name\": \"Nguyễn Văn A\",\n  \"role\": 2,\n  \"avatar\": \"https://example.com/avatar.jpg\",\n  \"phone\": \"0987654321\",\n  \"address\": \"123 Đường ABC, Quận 1, TP.HCM\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}/users",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/users/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Nguyễn Văn B\",\n  \"phone\": \"0912345678\",\n  \"address\": \"456 Đường XYZ, Quận 2, TP.HCM\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}/users/10",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"users",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/users/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/users/10",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"users",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/users/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"testuser@example.com\",\n  \"password\": \"P@ssw0rd123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}/auth/login",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notifications",
+			"item": [
+				{
+					"name": "api/notifications/:user_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/notifications/1?page=1",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"notifications",
+								"1"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/notifications/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}/notifications/5",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"notifications",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/notifications/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/notifications/1",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"notifications",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/notifications",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"user_id\": 1,\n  \"msg\": \"Đơn hàng của bạn đã được xác nhận!\",\n  \"type\": \"order\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}/notifications",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "feedbacks",
+			"item": [
+				{
+					"name": "api/feedbacks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"user_id\": 1,\n  \"product_id\": 3,\n  \"rating\": 5,\n  \"comment\": \"Sản phẩm rất tốt!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}/feedbacks",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"feedbacks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/feedbacks/:product_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/feedbacks/3",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"feedbacks",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cartitems",
+			"item": [
+				{
+					"name": "api/cartitems",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"user_id\": 1,\n  \"product_id\": 3,\n  \"quantity\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}/cartitems",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"cartitems"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/cartitems/:user_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/cartitems/1",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"cartitems",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/cartitems/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/cartitems/5",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"cartitems",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orderitems",
+			"item": [
+				{
+					"name": "api/orderitems",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"order_id\": 10,\n  \"product_id\": 3,\n  \"quantity\": 1,\n  \"price\": 200000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}/orderitems",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"orderitems"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orderitems/:order_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/orderitems/10",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"orderitems",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orderitems/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}/orderitems/15",
+							"host": [
+								"{{API_PREFIX}}"
+							],
+							"path": [
+								"orderitems",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /orderitems/:id/chikun",
+					"request": {
+					  "method": "PUT",
+					  "header": [
+						{
+						  "key": "Content-Type",
+						  "value": "application/json"
+						}
+					  ],
+					  "body": {
+						"mode": "raw",
+						"raw": "{\n  \"quantityChange\": 1\n}",
+						"options": {
+						  "raw": {
+							"language": "json"
+						  }
+						}
+					  },
+					  "url": {
+						"raw": "{{API_PREFIX}}/orderitems/15/chikun",
+						"host": [
+						  "{{API_PREFIX}}"
+						],
+						"path": [
+						  "orderitems",
+						  "15"
+						]
+					  }
+					},
+					"response": []
+				  }
+				  
+			]
+		}
+	]
+}

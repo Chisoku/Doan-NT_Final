@@ -1,0 +1,85 @@
+Table users {
+  id int [pk]
+  email varchar
+  password varchar
+  name varchar
+  role int
+  avatar varchar
+  phone int
+  address varchar
+  created_at datetime
+  updated_at datetime
+}
+
+Table categories {
+  id int [pk]
+  name varchar
+  image text
+}
+
+Table products {
+  id int [pk]
+  name varchar
+  image text
+  price int 
+  description text
+  //specification text
+  buyturn int // so lan mua cua san pham 
+  category_id int 
+}
+Ref: "categories"."id" < "products"."category_id"
+
+Table feedbacks {
+  id int [pk]
+  product_id int
+  user_id int
+  star int
+  content text
+  created_at datetime
+  updated_at datetime
+}
+Ref: "products"."id" < "feedbacks"."product_id"
+Ref: "users"."id" < "feedbacks"."user_id"
+
+Table orders {
+  id int [pk]
+  user_id int
+  status varchar
+  content text
+  payment_type varchar
+  total_price int
+  created_at datetime
+  updated_at datetime
+  shipping_address varchar
+}
+Ref: "users"."id" < "orders"."user_id"
+
+Table cart_items {
+  id int [pk]
+  user_id int
+  product_id int
+  quantity int
+}
+Ref: "users"."id" < "cart_items"."user_id"
+Ref: "products"."id" < "cart_items"."product_id"
+
+Table order_items {
+  id int [pk]
+  order_id int
+  product_id int
+  quantity int
+  price int
+  note varchar
+}
+Ref: "orders"."id" < "order_items"."order_id"
+Ref: "products"."id" < "order_items"."product_id"
+
+Table notifications {
+  id int [pk]
+  user_id int
+  msg varchar
+  is_read int
+  created_at datetime
+  type varchar
+}
+Ref: "users"."id" < "notifications"."user_id"

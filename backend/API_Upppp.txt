@@ -1,0 +1,52 @@
+1. Users (Người dùng & Xác thực)
+Xác thực
+POST /api/users/register → Đăng ký
+POST /api/users/login → Đăng nhập
+POST /api/users/logout → Đăng xuất
+POST /api/users/refresh-token → Cấp lại token mới
+------------------------------------------------------
+Quản lý người dùng
+GET /api/users → Lấy danh sách user
+GET /api/users/:id → Lấy thông tin user
+PUT /api/users/:id → Cập nhật thông tin user
+PUT /api/users/:id/password → Đổi mật khẩu
+DELETE /api/users/:id → Xóa user
+
+3. Categories (Danh mục sản phẩm)
+   - GET /api/categories - Lấy danh sách danh mục
+   - POST /api/categories - Thêm danh mục mới
+   - PUT /api/categories/:id - Cập nhật danh mục
+   - DELETE /api/categories/:id - Xóa danh mục
+
+4. Products (Sản phẩm)
+   - GET /api/products - Lấy danh sách sản phẩm
+   - GET /api/products/:id - Lấy chi tiết sản phẩm
+   - POST /api/products - Thêm sản phẩm mới
+   - PUT /api/products/:id - Cập nhật sản phẩm
+   - DELETE /api/products/:id - Xóa sản phẩm
+
+5. Cart (Giỏ hàng)
+   - POST /api/cart - Thêm sản phẩm vào giỏ
+   - GET /api/cart - Lấy giỏ hàng của user
+   - PUT /api/cart/:id - Cập nhật số lượng sản phẩm
+   - DELETE /api/cart/:id - Xóa sản phẩm khỏi giỏ
+
+6. Orders (Đơn hàng)
+   - POST /api/orders - Tạo đơn hàng
+   - GET /api/orders - Lấy danh sách đơn hàng
+   - GET /api/orders/:id - Lấy chi tiết đơn hàng
+   - PUT /api/orders/:id - Cập nhật trạng thái đơn hàng
+   - DELETE /api/orders/:id - Hủy đơn hàng
+
+7. Order Items (Chi tiết đơn hàng)
+   - GET /api/order-items/:orderId - Lấy danh sách sản phẩm trong đơn hàng
+
+8. Feedbacks (Đánh giá sản phẩm)
+   - POST /api/feedbacks - Người dùng đánh giá sản phẩm
+   - GET /api/feedbacks/:product_id - Lấy đánh giá của sản phẩm
+
+9. Notifications (Thông báo)
+   - GET /api/notifications - Lấy danh sách thông báo của user
+   - PUT /api/notifications/:id - Đánh dấu thông báo đã đọc
+   - DELETE /api/notifications/:id - Xóa thông báo
+
