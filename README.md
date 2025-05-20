@@ -26,14 +26,3 @@
 | Dev Tool      | Postman, VS Code                           |
 
 
-🏗️ Kiến trúc hệ thống
-Ứng dụng được chia làm hai phần chính: Frontend (di động) và Backend (API). Giao tiếp giữa hai phần thông qua các API RESTful.
-
-scss
-Copy
-Edit
-[ React Native App ]
-        ↓ (HTTP requests)
-[  Node.js + Express API  ]
-        ↓
-[        MySQL DB        ]
