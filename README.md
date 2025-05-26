@@ -2,9 +2,9 @@
 
 Đây là ứng dụng bán hoa được phát triển trong khuôn khổ môn học **Lập trình đa nền tảng**. Ứng dụng cho phép người dùng duyệt, đặt mua hoa, quản lý đơn hàng và thông tin cá nhân một cách thuận tiện trên thiết bị di động.
 
-## 1.🚀 Tính năng chính
+## 1.🚀 Tổng quan
 
-### 🛍️ Dành cho người dùng
+### 🛍️ Tính năng chính (Dành cho người dùng)
 - Xem danh sách hoa theo danh mục
 - Sắp xếp hoa theo: liên quan, mới nhất, giá, đánh giá
 - Tìm kiếm sản phẩm
