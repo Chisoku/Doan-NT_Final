@@ -79,8 +79,8 @@ Dự án này là bước đầu để xây dựng một hệ thống bán hàng
 
 ## 👥 Thành viên
 
-- Ninh Thị Duyên  
+- Nguyễn Khánh Chi  
 - Nguyễn Mạnh Hùng
-- Nguyễn Khánh Chi 
 - Nguyễn Văn Nam
+- Ninh Thị Duyên
 
