@@ -1,5 +1,17 @@
 # 🌸 Backend - Ứng dụng bán hoa
 Phần backend của ứng dụng bán hoa được xây dựng với mục tiêu cung cấp các API chuẩn RESTful để phục vụ cho việc quản lý và vận hành hệ thống bán hàng. Backend chịu trách nhiệm xử lý các nghiệp vụ như quản lý sản phẩm, danh mục, đơn hàng, giỏ hàng, người dùng, đánh giá và thông báo. Đồng thời, backend cũng đảm bảo bảo mật và tối ưu hiệu suất truy xuất dữ liệu.
+## 📁 Cấu trúc thư mục Backend
+```
+backend/
+├── controllers/ 🧑‍💻 # Xử lý logic của các API, nhận request và trả response
+├── dtos/ 📝 # Định nghĩa các Data Transfer Objects để validate và chuyển đổi dữ liệu
+├── middlewares/ 🛡️ # Các middleware trung gian (xác thực, xử lý lỗi, logging,...)
+├── migrations/ 🛠️ # Các file migration quản lý thay đổi schema cơ sở dữ liệu
+├── models/ 🗄️ # Định nghĩa các model, mapping với bảng trong database
+├── upload/ 📤 # Lưu trữ file upload (ảnh, tài liệu,...)
+├── approute/ 🚦 # Định nghĩa các route API và nhóm route theo module
+└── index.js 🚀 # Điểm khởi động server (entry point của backend)
+```
 ## 🗂️ Thiết kế cơ sở dữ liệu
 Ứng dụng sử dụng cơ sở dữ liệu quan hệ MySQL để lưu trữ thông tin sản phẩm, người dùng, đơn hàng và các thành phần liên quan. Dữ liệu được tổ chức dưới dạng các bảng với các mối quan hệ rõ ràng, đảm bảo tính toàn vẹn và hiệu quả khi truy xuất.
 ### 🧩 Sơ đồ cơ sở dữ liệu (ERD)
