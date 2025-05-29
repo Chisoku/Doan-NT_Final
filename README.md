@@ -13,8 +13,9 @@
 - Theo dõi đơn mua: đang giao, đã giao
 - Quản lý địa chỉ giao hàng
 - Cập nhật thông tin tài khoản
-🔷 [Frontend](./frontend/README.md)
-🔶 [Backend](./backend/README.md)
+- [Frontend](frontend/)
+- [Backend](backend/)
+
 ## 🧑‍💻 Công nghệ sử dụng
 
 | Layer         | Công nghệ                                 |
