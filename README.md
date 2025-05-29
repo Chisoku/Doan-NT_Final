@@ -3,6 +3,7 @@
 Đây là ứng dụng bán hoa được phát triển trong khuôn khổ môn học **Lập trình đa nền tảng**. Ứng dụng cho phép người dùng duyệt, đặt mua hoa, quản lý đơn hàng và thông tin cá nhân một cách thuận tiện trên thiết bị di động.
 - [Frontend](./endfront/README.md)
 - [Backend](./backend/README.md)
+- [TestCase](./backend/controllers/README.md)
 
 ## 🛍️ Tính năng chính
 
