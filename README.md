@@ -60,7 +60,7 @@
 | Layer         | Công nghệ                                 |
 |---------------|--------------------------------------------|
 | Frontend      | React Native (Expo), React Navigation      |
-| Backend       | Node.js, Express.js                        |
+| Backend       | Node.js                      |
 | Cơ sở dữ liệu | MySQL                                      |
 | Hình ảnh      | Multer upload & lưu trữ dạng URL           |
 | Authentication| JWT (JSON Web Token)                       |
