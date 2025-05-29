@@ -4,6 +4,21 @@
 - [Frontend](./endfront/README.md)
 - [Backend](./backend/README.md)
 - [TestCase](./backend/controllers/README.md)
+## 📱 Một vài ảnh demo
+<img src="https://github.com/user-attachments/assets/374b39d9-db1d-47df-9647-6689ef218ed3" width="150"/>
+<img src="https://github.com/user-attachments/assets/7ec18f0c-0406-4919-b521-acf95bc6dc23" width="150"/>
+<img src="https://github.com/user-attachments/assets/4f43e7c6-b3aa-4e7e-9bd4-26d2dea17d53" width="150"/>
+<img src="https://github.com/user-attachments/assets/639322f1-e094-4c22-a6a4-b39056b224d1" width="150"/>
+
+<img src="https://github.com/user-attachments/assets/450edb69-d073-4c99-8f09-3e5d0a8d4d7d" width="150"/>
+<img src="https://github.com/user-attachments/assets/e8049e91-917b-465e-8f79-a12bfda762f7" width="150"/>
+<img src="https://github.com/user-attachments/assets/cc7b4495-25f1-41e2-b065-17fbfc482fc1" width="150"/>
+<img src="https://github.com/user-attachments/assets/5d86f097-2ffa-4669-b300-22b62b80ac6c" width="150"/>
+
+<img src="https://github.com/user-attachments/assets/e0863cc6-9134-456f-9443-761819b4de1e" width="150"/>
+<img src="https://github.com/user-attachments/assets/1c3f45ad-1da4-42b4-9bda-960f7faeeded" width="150"/>
+<img src="https://github.com/user-attachments/assets/b048ed67-4b16-4cc0-9515-63c954196376" width="150"/>
+<img src="https://github.com/user-attachments/assets/ef953bd1-3eb7-463a-95ee-405df6e90cba" width="150"/>
 
 ## 🛍️ Tính năng chính
 
